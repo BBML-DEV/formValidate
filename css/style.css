@@ -1,0 +1,76 @@
+/*reset margin and padding*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --azul-escuro: rgba(9,9,121,1);
+    --azul-claro:  rgba(0,212,255,1);
+}
+/*body*/
+body{
+    background: cover;
+    background-position: fixed;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+h3{
+    color: var(--azul-escuro);
+}
+
+/*sessão formulário*/
+.container{
+    width: 800px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #FFF;
+    color: #000;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+}
+
+/*formulário inputs*/
+.form-control{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #CCC;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color:#CCC;
+}
+
+.form-floating.mb-4{
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(110, 106, 106);
+}
+form .form-floating > .form-control:focus~label{
+    color:  var(--azul-escuro);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+div > button.btn{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: var(--azul-escuro);
+    color: #FFF;
+    margin: 0 auto;
+}
+
+button.btn:hover{
+   background-color: var(--azul-claro);
+   transition: 0.9s;
+   color: #FFF;
+}
+
+/*error*/
+.error-text{
+    color: red;
+    font-size: 12px;
+}
